@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   margin:0;
   width: 100%;
@@ -12,6 +13,7 @@ body {
   flex-direction: column;
   background-size: cover;
 }
+
 .clockBox {
   width: 500px;
   text-align: center;
@@ -38,13 +40,17 @@ body {
   background-color: transparent;
 }
 
+
 .nameForm .inputName::placeholder {
   font-size: 30px;
-  color: rgba(255, 255, 255, .6)
+  color: rgba(255, 255, 255, .6);
+  transition: color .4s ease;
 }
+
 .nameForm .inputName:focus {
   outline: none;
 }
+
 .inputName.hide {
   display: none;
 }
@@ -82,7 +88,9 @@ body {
 }
 
 .todo .inputToDo::placeholder {
+  transition: color .4s ease;
   color:rgba(255, 255, 255, .4);
+  /* color: transparent; */
 }
 
 .todo .inputToDo:focus {
@@ -111,4 +119,8 @@ body {
   background-color: transparent;
   font-size: 23px;
   cursor: pointer;
+}
+
+.invisible::placeholder {
+  color: transparent !important;
 }
